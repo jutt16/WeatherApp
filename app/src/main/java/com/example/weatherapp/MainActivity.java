@@ -136,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
             String cityName = params[0];
             OkHttpClient client = new OkHttpClient();
             Request request = new Request.Builder()
-                    .url("https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=99d842f8f1eda59296ae0f333585814e")
+                    .url("https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid={{your api key}}")
                     .build();
             try {
                 Response response = client.newCall(request).execute();
